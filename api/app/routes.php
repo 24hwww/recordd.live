@@ -8,6 +8,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\App;
 use Slim\Interfaces\RouteCollectorProxyInterface as Group;
+use Slim\Views\PhpRenderer;
 
 return function (App $app) {
     $app->options('/{routes:.*}', function (Request $request, Response $response) {

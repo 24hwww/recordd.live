@@ -20,6 +20,11 @@ const today = new Date(timeElapsed);
 return <span>{today.toDateString()}</span>
 }
 
+
+function ListVoice(){
+  return (<div >kajsas</div>);
+}
+
 class Reclive extends React.Component {
     constructor(props) {
         super(props);
@@ -235,6 +240,7 @@ class Reclive extends React.Component {
     }
   }*/
 
+
 const App = () => {
   const [currentLs, setCurrentLs] = React.useState('');
 
@@ -247,7 +253,11 @@ const App = () => {
   }, []);
 
   return (
-          <main class="height-100"><div class="container height-100"><div class="vertical-align height-100"><div id="center-recordd" class="col-md-8 col-sm-12 col-xs-12"><h2>Record an audio and let them listen to you</h2><Reclive ifrec={currentLs}/><p id="formats"><strong>Last audio recorder:</strong> <DateNow/></p></div></div></div></main>
+          <main class="height-100"><div class="container height-100"><div class="vertical-align height-100"><div id="center-recordd" class="col-md-8 col-sm-12 col-xs-12"><h2>Record an audio and let them listen to you</h2><Reclive ifrec={currentLs}/><p id="formats"><strong>Last audio recorder:</strong> <DateNow/></p>
+          
+          <ListVoice/>
+          
+          </div></div></div></main>
   );
 };
 
